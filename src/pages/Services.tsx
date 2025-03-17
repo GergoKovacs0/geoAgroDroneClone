@@ -1,5 +1,4 @@
 import React from "react";
-import Service from "../types/Service";
 import { Container } from "react-bootstrap";
 import ServiceCard from "../components/ServiceCard";
 
