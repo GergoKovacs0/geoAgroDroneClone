@@ -10,6 +10,8 @@ import PageNotFound from "./pages/404";
 import Navigation from "./components/Navigation";
 import Service from "./pages/Service";
 import Footer from "./components/Footer";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -23,6 +25,8 @@ root.render(
           <Route path="/" element={<LandingPage />} />
           <Route path="/services" element={<Services />} />
           <Route path="/service/:serviceId" element={<Service />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
           <Route path="/connections" element={<Connections />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
