@@ -10,20 +10,18 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   const navigate = useNavigate();
   return (
-    <Card className="align-items-center w-25">
+    <Card className="align-items-center w-25 m-5">
       <Card.Img src={service.img} alt={service.name} />
       <Card.Body className="d-flex flex-column align-items-center">
         <Card.Title>{service.name}</Card.Title>
         <Card.Text>{service.description}</Card.Text>
       </Card.Body>
-      <Card.Footer>
         <button
-          className="btn btn-primary"
+          className="btn btn-primary mb-2" 
           onClick={() => navigate(`/service/${service.id}`)}
         >
           Árak
         </button>
-      </Card.Footer>
     </Card>
   );
 };
