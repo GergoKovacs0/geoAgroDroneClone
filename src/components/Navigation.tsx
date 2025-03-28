@@ -33,6 +33,10 @@ const Navigation: React.FC = () => {
         return <h1>Szolgáltatások</h1>;
       case "/connections":
         return <h1>Elérhetőségeink</h1>;
+      case "/privacy":
+        return <h1>Adatvédelmi nyilatkozat</h1>;
+      case "/terms":
+        return <h1>Felhasználási feltételek</h1>;
       default:
         return null;
     }
