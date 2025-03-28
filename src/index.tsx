@@ -9,6 +9,7 @@ import Services from "./pages/Services";
 import PageNotFound from "./pages/404";
 import Navigation from "./components/Navigation";
 import Service from "./pages/Service";
+import Footer from "./components/Footer";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -17,13 +18,16 @@ root.render(
   <>
     <BrowserRouter>
       <Navigation />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/service/:serviceId" element={<Service />} />
-        <Route path="/connections" element={<Connections />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/service/:serviceId" element={<Service />} />
+          <Route path="/connections" element={<Connections />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </main>
+      <Footer />
     </BrowserRouter>
   </>
 );
