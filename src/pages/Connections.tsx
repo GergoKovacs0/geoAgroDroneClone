@@ -1,8 +1,9 @@
 import React from "react";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdHeight } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 const Connections: React.FC = () => {
   return (
